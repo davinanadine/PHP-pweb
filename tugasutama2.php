@@ -1,23 +1,26 @@
-<?php
-// Nilai X dan Y itu ditentukan sendiri
-$x = 3;   // Basis
-$y = 4;   // Pangkat
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menghitung Luas Persegi Panjang Dengan Form</title>
+</head>
+<body>
 
-// Inisialisasi
-$h = 1;  // hasil
-$l = 0;  
+<h2>Form Menghitung Luas Persegi Panjang</h2>
 
-// Proses perulangan sesuai flowchart
-while ($l < $y) {
-    $h = $h * $x; // H = H * X
-    $l = $l + 1;  // L = L + 1
-}
+<form method="GET" action="hasiltugasutama2.php">
 
-// Output akhir
-echo "X = $x<br>";
-echo "Y = $y<br>";
-echo "Hasil (X^Y) = $h<br><br>";
+    Nilai Panjang : 
+    <input type="number" name="panjang" required>
+    <br><br>
 
-echo "Nama: Davina Nadin<br>";
-echo "Kelas: XI PPLG<br>";
-?>
+    Nilai Lebar : 
+    <input type="number" name="lebar" required>
+    <br><br>
+
+    <input type="submit" value="Proses">
+    <input type="reset" value="Reset">
+
+</form>
+
+</body>
+</html>
